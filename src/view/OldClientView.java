@@ -69,6 +69,7 @@ public class OldClientView extends javax.swing.JFrame {
         cidadeField.setText("");
         emailField.setText("");
         telefoneField.setText("");
+        ufField.setText("");
     }
     
     private void deletarCliente(Cliente novoCliente){
@@ -318,8 +319,124 @@ public class OldClientView extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        atualizarCliente(novoCliente);
-        limparCampo();
+        
+        switch(ufField.getText()){
+            case "AC":
+                atualizarCliente(novoCliente);
+                limparCampo();
+                break;
+            case "AL":
+                atualizarCliente(novoCliente);
+                limparCampo();
+                break;
+            case "AP":
+                atualizarCliente(novoCliente);
+                limparCampo();
+                break;
+            case "AM":
+                atualizarCliente(novoCliente);
+                limparCampo();
+                break;
+            case "BA":
+                atualizarCliente(novoCliente);
+                limparCampo();
+                break;
+            case "CE":
+                atualizarCliente(novoCliente);
+                limparCampo();
+                break;
+            case "DF":
+                atualizarCliente(novoCliente);
+                limparCampo();
+                break;
+            case "ES":
+                atualizarCliente(novoCliente);
+                limparCampo();
+                break;
+            case "GO":
+                atualizarCliente(novoCliente);
+                limparCampo();
+                break;
+            case "MA":
+                atualizarCliente(novoCliente);
+                limparCampo();
+                break;
+            case "MT":
+                atualizarCliente(novoCliente);
+                limparCampo();
+                break;
+            case "MS":
+                atualizarCliente(novoCliente);
+                limparCampo();
+                break;
+            case "MG":
+                atualizarCliente(novoCliente);
+                limparCampo();
+                break;
+            case "PA":
+                atualizarCliente(novoCliente);
+                limparCampo();
+                break;
+            case "PB":
+                atualizarCliente(novoCliente);
+                limparCampo();
+                break;
+            case "PR":
+                atualizarCliente(novoCliente);
+                limparCampo();
+                break;
+            case "PE":
+                atualizarCliente(novoCliente);
+                limparCampo();
+                break;
+            case "PI":
+                atualizarCliente(novoCliente);
+                limparCampo();
+                break;
+            case "RJ":
+                atualizarCliente(novoCliente);
+                limparCampo();
+                break;
+            case "RN":
+                atualizarCliente(novoCliente);
+                limparCampo();
+                break;
+            case "RS":
+                atualizarCliente(novoCliente);
+                limparCampo();
+                break;
+            case "RO":
+                atualizarCliente(novoCliente);
+                limparCampo();
+                break;
+            case "RR":
+                atualizarCliente(novoCliente);
+                limparCampo();
+                break;
+            case "SC":
+                atualizarCliente(novoCliente);
+                limparCampo();
+                break;
+            case "SP":
+                atualizarCliente(novoCliente);
+                limparCampo();
+                break;
+            case "SE":
+                atualizarCliente(novoCliente);
+                limparCampo();
+                break;
+            case "TO":
+                atualizarCliente(novoCliente);
+                limparCampo();
+                break;
+            default:
+                JOptionPane.showMessageDialog(null, "Insira um valor válido no campo 'UF'"); 
+        }
+        
+        //JOptionPane.showMessageDialog(null, "Insira um valor válido no campo 'UF'"); 
+        //atualizarCliente(novoCliente);
+        //limparCampo();
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton4StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jButton4StateChanged
