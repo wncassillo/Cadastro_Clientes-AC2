@@ -47,6 +47,9 @@ public class OldClientView extends javax.swing.JFrame {
             
            if (novoCliente.getNome().isEmpty()){
                 JOptionPane.showMessageDialog(null, "Cliente não encontrado!");
+           } else{
+               jButton1.setEnabled(true);
+               jButton4.setEnabled(true);
            }
            
         } catch (Exception e) {            
@@ -157,6 +160,7 @@ public class OldClientView extends javax.swing.JFrame {
         jLabel8.setText("Telefone");
 
         jButton1.setText("Atualizar Cadastro");
+        jButton1.setEnabled(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -200,6 +204,7 @@ public class OldClientView extends javax.swing.JFrame {
         });
 
         jButton4.setText("Apagar Cadastro");
+        jButton4.setEnabled(false);
         jButton4.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
                 jButton4StateChanged(evt);
@@ -208,6 +213,11 @@ public class OldClientView extends javax.swing.JFrame {
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
+            }
+        });
+        jButton4.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                jButton4PropertyChange(evt);
             }
         });
 
@@ -446,7 +456,14 @@ public class OldClientView extends javax.swing.JFrame {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
         buscarCliente(novoCliente);
+        //jButton1.setEnabled(true);
+        //jButton4.setEnabled(true);
+        
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jButton4PropertyChange
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton4PropertyChange
 
     /**
      * @param args the command line arguments
